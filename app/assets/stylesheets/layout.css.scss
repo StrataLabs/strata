@@ -1,0 +1,51 @@
+ul {
+  list-style: none;
+}
+
+.clear {
+  clear: both;
+}
+
+#copyright {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+#contact-info{
+  float:right;
+  position:relative;
+  left:-50%;
+  text-align:left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#contact-info ul{
+list-style:none; 
+position:relative;
+left:50%;
+}
+#contact-info li{
+  float:left;
+  position:relative;
+  padding-left: 15px;
+  padding-right: 15px;
+}/* ie needs position:relative here*/
+
+#footer-nav{
+  float:right;
+  position:relative;
+  left:-50%;
+  text-align:left;
+}
+#footer-nav ul{
+  list-style:none; 
+  position:relative;
+  left:50%;
+}
+#footer-nav li{
+  float:left;
+  position:relative;
+  padding-left: 15px;
+  padding-right: 15px;
+}/* ie needs position:relative here*/
