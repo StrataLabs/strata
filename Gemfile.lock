@@ -43,6 +43,12 @@ GIT
       rack-cache (>= 0.5.3)
       refinerycms-core (= 2.0.10)
 
+PATH
+  remote: vendor/extensions
+  specs:
+    refinerycms-people (1.0)
+      refinerycms-core (~> 2.0.10)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -199,6 +205,7 @@ DEPENDENCIES
   rails (= 3.2.13)
   refinerycms (~> 2.0.0)!
   refinerycms-i18n (~> 2.0.0)
+  refinerycms-people!
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)
   zurb-foundation (~> 4.0.0)
