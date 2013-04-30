@@ -22,7 +22,7 @@ module Refinery
     protected
 
       def find_all_people
-        @people = Person.order('position ASC')
+        @people = Person.where(:team => params[:team]).order('position ASC')
       end
 
       def find_page

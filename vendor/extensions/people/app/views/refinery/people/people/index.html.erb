@@ -1,11 +1,15 @@
-<% content_for :body do %>
-  <ul id="people">
-    <% @people.each do |person| %>
-      <li>
-        <%= link_to person.name, refinery.people_person_path(person) %>
-      </li>
-    <% end %>
-  </ul>
-<% end %>
+<%= render 'refinery/pages/company_sub_nav' %>
 
-<%= render '/refinery/content_page' %>
+<section id="body_content">
+  <section id="body">
+    <div id="people">
+      <% @people.each do |person| %>
+      <div class="person">
+        <%= image_fu person.photo, "200x200", class: "image-align-#{cycle("left", "right")}" %>
+        <h2><%= person.name %></h2>
+        <%=raw person.profile %>
+      </div>
+      <% end %>
+    </div>
+  </section>
+</section>
