@@ -1,6 +1,6 @@
 <section id="body_content_title">
-  <h1 id="title">Company</h1>
   <% if request.url.downcase.include?("company") %>
+    <h1 id="title">Company</h1>
     <nav id="sub-nav">
       <ul>
         <li><a href="/company/our-story">Our Story</a></li>
@@ -9,5 +9,7 @@
         <li><a href="/company/contact-us">Contact Us</a></li>
       </ul>
     </nav>
+  <% else %>
+    <h1 id="title"><%= @page.title %></h1>
   <% end %>
 </section>
