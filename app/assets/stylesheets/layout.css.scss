@@ -19,36 +19,36 @@ ul {
   text-align:left;
   padding-top: 20px;
   padding-bottom: 20px;
+  ul {
+    list-style:none; 
+    position:relative;
+    left:50%;
+  }
+  li{
+    float:left;
+    position:relative;
+    padding-left: 15px;
+    padding-right: 15px;
+  }/* ie needs position:relative here*/
 }
-#contact-info ul{
-  list-style:none; 
-  position:relative;
-  left:50%;
-}
-#contact-info li{
-  float:left;
-  position:relative;
-  padding-left: 15px;
-  padding-right: 15px;
-}/* ie needs position:relative here*/
 
 #footer-nav{
   float:right;
   position:relative;
   left:-50%;
   text-align:left;
+  ul {
+    list-style:none; 
+    position:relative;
+    left:50%;
+  }
+  li {
+    float:left;
+    position:relative;
+    padding-left: 15px;
+    padding-right: 15px;
+  }/* ie needs position:relative here*/
 }
-#footer-nav ul{
-  list-style:none; 
-  position:relative;
-  left:50%;
-}
-#footer-nav li{
-  float:left;
-  position:relative;
-  padding-left: 15px;
-  padding-right: 15px;
-}/* ie needs position:relative here*/
 
 #body_content_title {
   padding-bottom: 30px;
@@ -70,4 +70,26 @@ ul {
 #side_body {
   float:right;
   position:relative;
+}
+
+.blog-info {
+  float: left;
+  width: 40%;
+  height: 250px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  p {
+    margin: 0px;
+  }
+  ul {
+    margin-top: 10px;
+  }
+  li{
+    float:left;
+    position:relative;
+    padding-right: 15px;
+  }/* ie needs position:relative here*/
 }
